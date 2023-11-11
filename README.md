@@ -1,4 +1,54 @@
-# ContadorDePalavras
-Este algoritmo em C lê um arquivo de texto e conta o número de ocorrências de uma palavra específica, fornecida pelo usuário. Ele começa pedindo ao usuário que digite o nome do arquivo de texto e a palavra que deseja contar. Em seguida, ele abre o arquivo para leitura usando a função `fopen()`, e lê cada linha do arquivo usando a função `fgets()`. Em um loop while aninhado, ele usa a função `strstr()` para encontrar a primeira ocorrência da palavra na linha e incrementa o contador de ocorrências, movendo o ponteiro para a próxima posição da linha para encontrar outras ocorrências. Finalmente, ele exibe a contagem de ocorrências para o usuário e fecha o arquivo usando a função `fclose()`. 
+# Contador de Palavras em Arquivo Texto
 
-Este algoritmo é simples e eficaz para o objetivo de contar o número de ocorrências de uma palavra em um arquivo de texto. Ele usa funções padrão da biblioteca C para entrada e saída de arquivos e manipulação de strings, tornando-o fácil de entender e implementar.
+Este programa em C conta quantas vezes uma palavra específica ocorre em um arquivo de texto. Ele foi desenvolvido para ser simples, eficiente e agora oferece entradas mais seguras.
+
+## Como Usar
+
+1. **Compilação:**
+   Certifique-se de ter um compilador C instalado em seu sistema. Use o seguinte comando para compilar o programa:
+
+   ```bash
+   gcc ContadorDePalavras.c -o contador_palavras
+   ```
+
+2. **Execução:**
+   Execute o programa compilado, fornecendo o nome do arquivo de texto e a palavra que deseja contar quando solicitado.
+
+   ```bash
+   ./contador_palavras
+   ```
+
+3. **Entradas:**
+   - **Nome do Arquivo de Texto:** Insira o nome do arquivo de texto desejado. A entrada agora é segura para espaços e caracteres especiais.
+   - **Palavra a Contar:** Digite a palavra que você deseja contar no arquivo.
+
+4. **Saída:**
+   O programa exibirá o número de ocorrências da palavra no arquivo.
+
+## Exemplo de Uso
+
+Suponha que você tenha um arquivo de texto chamado `exemplo.txt` com o seguinte conteúdo:
+
+```
+Este é um exemplo de arquivo de texto.
+Aqui, a palavra exemplo ocorre várias vezes.
+Este exemplo serve para demonstrar o funcionamento do programa.
+```
+
+Ao executar o programa e fornecer `exemplo.txt` como o arquivo de texto e `exemplo` como a palavra a contar, a saída será:
+
+```
+Digite o nome do arquivo de texto: exemplo.txt
+Digite a palavra que deseja contar: exemplo
+A palavra 'exemplo' ocorre 3 vezes no arquivo.
+```
+
+## Notas Adicionais
+
+- Certifique-se de que o arquivo de texto esteja no mesmo diretório que o programa ou forneça o caminho completo do arquivo.
+- O programa faz distinção entre maiúsculas e minúsculas ao contar as palavras.
+
+Sinta-se à vontade para explorar e modificar o código conforme necessário. Qualquer dúvida ou problema, não hesite em entrar em contato.
+```
+
+Este README agora reflete a entrada segura para o nome do arquivo, removendo o caractere de nova linha, e explica a lógica de contagem de palavras no código atualizado.
