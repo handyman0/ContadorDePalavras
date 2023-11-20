@@ -49,6 +49,3 @@ A palavra 'exemplo' ocorre 3 vezes no arquivo.
 - O programa faz distinção entre maiúsculas e minúsculas ao contar as palavras.
 
 Sinta-se à vontade para explorar e modificar o código conforme necessário. Qualquer dúvida ou problema, não hesite em entrar em contato.
-```
-
-Este README agora reflete a entrada segura para o nome do arquivo, removendo o caractere de nova linha, e explica a lógica de contagem de palavras no código atualizado.
